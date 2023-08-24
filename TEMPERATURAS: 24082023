@@ -1,0 +1,39 @@
+def celcius_to_fahrenheit(celcius):
+    fahrenheit = celcius * 9/5 +32
+    return fahrenheit
+    
+def celcius_to_kelvin(celcius):
+    kelvin = celcius + 273.15
+    return kelvin
+    
+def fahrenheit_to_kelvin(fahrenheit):
+    kelvin = (fahrenheit + 459.67) * 5/9
+    return kelvin
+    
+def fehrenheit_to_celcius(fahrenheit):
+    celcius = (fahrenehit - 32) * 5/9
+    return celcius 
+    
+def kelvin_to_celcius(kelvin):
+    celcius = kelvin * - 273.15
+    return celcius 
+    
+def kelvin_to_fahrenheit(kelvin):
+    fahrenheit = kelvin  * 9/5 - 459.67
+    return fahrenheit 
+    
+continuar = 1
+while continuar == 1:
+    
+    #peço a entrada do usuário para a temperatura em celcius
+    celcius = float(input("digite a temperatura em graus Celcius:"))
+    fahrenheit = celcius_to_fahrenheit(celcius)
+    kelvin = celcius_to_kelvin(celcius)
+    
+    print(f"{celcius} graus Celcius equivalem a {fahrenheit} graus fahrenheit e {kelvin} kelvin.")
+    
+    
+    
+    print("\n se deseja continuar aperte 1 se deseja finalizar aperte 2:")
+    
+    continuar = int(input())
